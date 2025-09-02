@@ -34,7 +34,7 @@ int main() {
 
 	// If rule1 == rule2
 	printf("---\n");
-	if (rule1[i] == '\0' && rule1[i] == '\0') {
+	if (rule1[i] == rule2[j]) {
 		printf("A -> %s\n", prefix);
 		return 0;
 	}
@@ -43,7 +43,7 @@ int main() {
 	printf("A -> %sA'\n", prefix);
 	if (rule1[i] == '\0') {
 		printf("A' -> %s\n", (char*)rule2+j);
-	} else if (rule2[i] == '\0') {
+	} else if (rule2[j] == '\0') {
 		printf("A' -> %s\n", (char*)rule1+i);
 	} else {
 		printf("A' -> %s|%s\n", (char*)rule1+i, (char*)rule2+j);
