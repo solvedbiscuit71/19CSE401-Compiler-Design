@@ -38,6 +38,12 @@ int main() {
 		printf("A -> %s\n", prefix);
 		return 0;
 	}
+	
+	// If prefix == ""
+	if (k == 0) {
+		printf("A -> %s|%s\n", rule1, rule2);
+		return 0;
+	}
 
 	// Otherwise
 	printf("A -> %sA'\n", prefix);
