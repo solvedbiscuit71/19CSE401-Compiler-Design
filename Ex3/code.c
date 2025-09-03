@@ -32,9 +32,10 @@ char* lookup(char (*table)[4][5], char A, char t) {
 
 int main() {
 	char table[3][4][5] = {
-		"A", "", "", "",
-		"Bi", "", "", "",
-		"", "A+", "A*", "e"
+	//      i     +     *    $
+		 "A",   "",   "",  "",	// S
+		"Bi",   "",   "",  "",	// A
+		  "", "A+", "A*", "e" 	// B
 	};
 
 	char stack[SIZE] = "$S";
