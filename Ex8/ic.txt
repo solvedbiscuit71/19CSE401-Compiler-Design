@@ -1,0 +1,7 @@
+load t1 5
+load t2 10
+uminus t2 t2
++ t3 t1 t2
+* t4 t1 t2
+/ t4 t4 t3
+print t4
